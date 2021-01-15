@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./Popup.scss";
 
 export default function Popup() {
   useEffect(() => {
@@ -9,8 +8,8 @@ export default function Popup() {
 
   return (
     <div className="popupContainer">
-      <button className="text">hello</button>
-      <button className="text">hello</button>
+      <button className="text-xs">hello</button>
+      <button className="text-lg">hello</button>
     </div>
   );
 }
