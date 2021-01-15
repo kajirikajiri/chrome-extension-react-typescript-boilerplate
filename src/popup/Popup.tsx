@@ -10,6 +10,7 @@ export default function Popup() {
   return (
     <div className="popupContainer">
       <button className="text">hello</button>
+      <button className="text">hello</button>
     </div>
-  )
+  );
 }
