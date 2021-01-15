@@ -1,7 +1,9 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import Popup from './Popup';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import Popup from "./Popup";
+import { browser } from "webextension-polyfill-ts";
 
-chrome.tabs.query({ active: true, currentWindow: true }, tab => {
-    ReactDOM.render(<Popup />, document.getElementById('popup'));
-});
+(async () => {
+  await browser.tabs.query({ active: true, currentWindow: true });
+  ReactDOM.render(<Popup />, document.getElementById("popup"));
+})();

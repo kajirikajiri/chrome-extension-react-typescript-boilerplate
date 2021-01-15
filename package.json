@@ -36,7 +36,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "stylelint": "^13.8.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "webextension-polyfill-ts": "^0.22.0"
   },
   "husky": {
     "hooks": {
