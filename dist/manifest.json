@@ -1,13 +1,12 @@
 {
   "manifest_version": 2,
 
-  "name": "Chrome Extension (built with TypeScript + React)",
-  "description": "A boilerplate project to quickly build a Chrome extension using TypeScript and React (built using webpack).",
+  "name": "Top of Content",
+  "description": "もうだいじょうです。ToC(Top of Content)がないサイトでもこの拡張機能を使えば自動でToCが作成されてページひだりに表示されます。",
   "version": "1.0.0",
 
   "browser_action": {
-    "default_icon": "icon16.png",
-    "default_popup": "popup.html"
+    "default_icon": "icon16.png"
   },
 
   "background": {
@@ -22,6 +21,7 @@
       "run_at": "document_start"
     }
   ],
+  "web_accessible_resources": ["popup.html"],
 
   "icons": {
     "16": "icon16.png",
@@ -29,5 +29,5 @@
     "128": "icon128.png"
   },
 
-  "permissions": []
+  "permissions": ["tabs"]
 }

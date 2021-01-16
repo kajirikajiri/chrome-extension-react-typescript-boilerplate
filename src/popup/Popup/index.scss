@@ -1,0 +1,11 @@
+.strong {
+  &::before {
+    content: "\00a0\00a0\00a0\00a0 └";
+  }
+}
+
+.h456 {
+  &::before {
+    content: "\00a0\00a0 ┗";
+  }
+}

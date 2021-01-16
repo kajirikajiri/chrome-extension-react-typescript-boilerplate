@@ -1,9 +1,13 @@
 import { browser } from "webextension-polyfill-ts";
 
-const callback = (request) => {
+browser.runtime.onMessage.addListener((request) => {
   console.log(request);
 
   return Promise.resolve({ from: "background-script" });
-};
+});
 
-browser.runtime.onMessage.addListener(callback);
+browser.browserAction.onClicked.addListener((tab) => {
+  (async () => {
+    browser.tabs.sendMessage(tab.id, "toggle");
+  })();
+});
